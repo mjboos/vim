@@ -115,3 +115,8 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
+autocmd FileType python let &mp = 'echo "*** running % ***" ; pyflakes %'
+autocmd FileType tex,mp,rst,python imap <Esc>[15~ <C-O>:make!^M
+autocmd FileType tex,mp,rst,python map  <Esc>[15~ :make!^M
+autocmd FileType tex,mp,rst,python set autowrite
