@@ -23,6 +23,7 @@ call vundle#rc()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/vundle'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'davidhalter/jedi-vim'
 
 filetype plugin indent on
 
