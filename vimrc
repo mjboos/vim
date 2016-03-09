@@ -121,3 +121,10 @@ autocmd FileType python let &mp = 'echo "*** running % ***" ; pyflakes %'
 autocmd FileType tex,mp,rst,python imap <Esc>[15~ <C-O>:make!^M
 autocmd FileType tex,mp,rst,python map  <Esc>[15~ :make!^M
 autocmd FileType tex,mp,rst,python set autowrite
+
+highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
+autocmd FileType python match ExtraWhitespace /\s\+$/
+highlight OverLength ctermbg=red ctermfg=white
+autocmd FileType python match OverLength /\%81v.\+/
+
+
