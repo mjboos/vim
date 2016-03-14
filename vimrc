@@ -123,7 +123,7 @@ autocmd FileType tex,mp,rst,python map  <Esc>[15~ :make!^M
 autocmd FileType tex,mp,rst,python set autowrite
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
-autocmd FileType python match ExtraWhitespace /\s\+$/
+autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
 highlight OverLength ctermbg=red ctermfg=white
 autocmd FileType python match OverLength /\%81v.\+/
 
