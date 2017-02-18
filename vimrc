@@ -14,17 +14,20 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 "set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "let path = '~/some/path/here'
 "call vundle#rc(path)
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'davidhalter/jedi-vim'
-
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'tpope/vim-fugitive'
+call vundle#end()
 filetype plugin indent on
 
 syntax enable
@@ -126,5 +129,6 @@ highlight ExtraWhitespace ctermbg=darkgreen guibg=lightgreen
 autocmd Syntax * syn match ExtraWhitespace /\s\+$\| \+\ze\t/
 highlight OverLength ctermbg=red ctermfg=white
 autocmd FileType python match OverLength /\%81v.\+/
-
-
+set relativenumber
+set number
+map <C-n> :NERDTreeToggle<CR>
