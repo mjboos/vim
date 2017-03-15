@@ -146,6 +146,8 @@ def km_from_string(s=''):
             echo(":IPython " + s + " failed", "Info")
             echo("^-- failed '" + s + "' not found", "Error")
             return
+        print IPython.__version__
+        print fullpath
         km = KernelManager(connection_file = fullpath)
         km.load_connection_file()
     else:
