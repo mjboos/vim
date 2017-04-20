@@ -132,3 +132,5 @@ autocmd FileType python match OverLength /\%81v.\+/
 set relativenumber
 set number
 map <C-n> :NERDTreeToggle<CR>
+
+let g:jedi#popup_on_dot = 0
