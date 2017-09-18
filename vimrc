@@ -27,6 +27,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-fugitive'
+Plugin 'nvie/vim-flake8'
 call vundle#end()
 filetype plugin indent on
 
