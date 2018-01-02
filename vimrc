@@ -1,15 +1,3 @@
-
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2011 Apr 15
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -28,6 +16,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-fugitive'
 Plugin 'nvie/vim-flake8'
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
@@ -135,3 +124,7 @@ set number
 map <C-n> :NERDTreeToggle<CR>
 
 let g:jedi#popup_on_dot = 0
+
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
