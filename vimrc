@@ -14,9 +14,10 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'wilywampa/vim-ipython'
 Plugin 'tpope/vim-fugitive'
 Plugin 'nvie/vim-flake8'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 
